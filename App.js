@@ -1,14 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
+import 'react-native-gesture-handler';
 import React from 'react';
+import { StatusBar } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
 
-// pages
-import { Home } from './src/screens/Home';
+import AppRoutes from './src/routes/app.routes';
 
 export default function App() {
   return (
-    <>
-      <StatusBar style="auto" />
-      <Home />
-    </>
+    <NavigationContainer>
+      <StatusBar hidden={true} />
+      <AppRoutes/>
+    </NavigationContainer>
   );
 }

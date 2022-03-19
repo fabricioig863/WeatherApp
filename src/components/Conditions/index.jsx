@@ -8,29 +8,31 @@ import {
   Title
 } from './styles.js'
 
-export function Conditions() {
+const Conditions = ({ weather }) =>  {
   return(
     <Container>
       <Condition>
         <FeatherIcon name="wind" />
-        <Title>Weather</Title>
+        <Title>{weather.results.wind_speedy}</Title>
       </Condition>
 
       <Condition>
         <MaterialIcon name="weather-sunset-up" />
-        <Title>Weather</Title>
+        <Title>{weather.results.sunrise}</Title>
       </Condition>
 
       <Condition>
         <MaterialIcon name="weather-sunset-up" />
-        <Title>Weather</Title>
+        <Title>{weather.results.sunset}</Title>
       </Condition>
 
       <Condition>
         <MaterialIcon name="weather-sunset-up" />
-        <Title>Weather</Title>
+        <Title>{weather.results.humidity}</Title>
       </Condition>
 
     </Container>
   )
 }
+
+export default Conditions

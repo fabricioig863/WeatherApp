@@ -1,9 +1,9 @@
-import axios from 'axios';
+import axios from "axios";
 
-export const key = "07973b7f";
+export const key = "f4f2abd0";
 
 const api = axios.create({
-  baseURL: 'https://api.hgbrasil.com'
-})
+  baseURL: "https://api.hgbrasil.com",
+});
 
 export default api;

@@ -1,11 +1,30 @@
 import React from 'react';
 
-import { Container, Title } from './styles';
+import { 
+  Container,
+  WeatherResultsDateText, 
+  WeatherResultsCityText, 
+  Icon, 
+  WeatherResultsTempText 
+} from './styles';
 
-export function Header() {
+const Header = ({ background, weather, icon}) =>  {
   return (
-    <Container>
-      <Title>Header</Title>
+    <Container
+      colors={background}
+    >
+      <WeatherResultsDateText>{weather.results.date}</WeatherResultsDateText>
+      <WeatherResultsCityText>{weather.results.city_name}</WeatherResultsCityText>
+
+      <Icon 
+        name={icon.name} 
+        color={icon.color}
+      />
+
+      <WeatherResultsTempText>{weather.results.temp}º</WeatherResultsTempText>
+
     </Container>
   )
 }
+
+export default Header;
