@@ -32,4 +32,3 @@ export const WeatherResultsTempText = styled.Text`
   font-size: 80px;
   font-weight: bold; 
 `;
-

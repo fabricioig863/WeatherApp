@@ -8,9 +8,9 @@ import {
   TempMin 
 } from './styles';
 
-import { condition } from '../../utils/conditions';
+import { condition } from '../../utils/condition';
 
-const Forecast = ({ data }) => {
+const Forcast = ({ data }) => {
 
   let icon = condition(data.condition)
 
@@ -31,4 +31,4 @@ const Forecast = ({ data }) => {
   )
 }
 
-export default Forecast;
+export default Forcast;

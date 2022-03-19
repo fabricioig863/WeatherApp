@@ -15,12 +15,6 @@ export const Container = styled.TouchableOpacity`
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   elevation: 2;
-  shadow-color: #000;
-  shadow-opacity: 0.2;
-  shadow-offset: {
-    width: 1px;
-    height: 3px;
-  }
 `;
 
 export const Icon = styled(Feather)`

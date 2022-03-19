@@ -8,7 +8,7 @@ export const Container = styled.View`
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 14px;
-  padding-right: 14;
+  padding-right: 14px;
   justify-content: space-around;
   align-items: center;
 `;
