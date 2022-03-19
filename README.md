@@ -2,9 +2,10 @@
 
 ## :hammer: Tecnologias
 
-tenologias utilizadas no decorrer do projeto:
+tecnologias utilizadas no decorrer do projeto:
 
 - [Expo](https://expo.io/)
+- [Axios](https://axios-http.com/docs/intro)
 - [React Native](https://reactnative.dev/)
 - [Javascript](https://www.typescriptlang.org/)
 - [React Navigation](https://reactnavigation.org/)
@@ -21,16 +22,16 @@ tenologias utilizadas no decorrer do projeto:
 
 ## :rocket: Como Executar o projeto ?
 ``` bash
-  # Clone the repository:
-  $ https://github.com/fabricioig863/OpenWeatherMap
+  # Clone o repositório:
+  $ git clone https://github.com/fabricioig863/OpenWeatherMap
   
-  # Enter directory:
+  # Entre no projeto:
   $ cd OpenWeatherMap
   
-  # Install dependencies:
-  $ yarn
+  # Instale as dependências:
+  $ yarn install
 
-  # Intall expo
+  # Intalar o expo e rodar por meio dele
   $ expo start
 ```
 
