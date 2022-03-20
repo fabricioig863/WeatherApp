@@ -1,15 +1,15 @@
-import React from 'react';
-import { 
-  Container,
-  Icon
- } from './styles';
+import React from "react";
+import { Feather } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
-const Menu = () => {
+import { Container } from "./styles";
+
+export default function Menu() {
+  const navigation = useNavigation();
+
   return (
-    <Container>
-      <Icon />
+    <Container onPress={() => navigation.openDrawer()}>
+      <Feather name="menu" size={24} color="#373737" />
     </Container>
-  )
+  );
 }
-
-export default Menu;

@@ -11,7 +11,12 @@ const Drawer = createDrawerNavigator();
 
 export default function AppRoutes() {
     return (
-        <Drawer.Navigator initialRouteName="Home">
+        <Drawer.Navigator 
+            initialRouteName="Home"
+            screenOptions={{
+                headerShown: false,
+            }}
+        >
             <Drawer.Screen
                 name="Home"
                 component={Home}
