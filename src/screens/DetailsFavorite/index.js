@@ -20,7 +20,6 @@ export default function DetailsFavorite({ route }) {
   const navigation = useNavigation();
   const { cityName } = route.params;
 
-  const [errorMessage, setErroMessage] = useState(null);
   const [loading, setLoading] = useState(true);
   const [weather, setWeather] = useState([]);
   const [icon, setIcon] = useState({ name: "cloud", color: "#fff" });
@@ -64,7 +63,7 @@ export default function DetailsFavorite({ route }) {
 
   return (
     <Container>
-      <BackButton onPress={() => navigation.navigate("Home")}>
+      <BackButton onPress={() => navigation.goBack()}>
         <Feather name="chevron-left" size={32} color="#000" />
         <Goback>Voltar</Goback>
       </BackButton>

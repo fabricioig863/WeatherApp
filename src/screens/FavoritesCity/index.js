@@ -21,10 +21,10 @@ export default function FavoritesCity() {
   const [cities, setCities] = useState([]);
 
   useEffect(() => {
+    const dataKey = "@weater/FavoriteCity"
     const getData = async () => {
       try {
-        await AsyncStorage.getItem("@weater/FavoriteCity").then((value) => {
-          // console.log(value);
+        await AsyncStorage.getItem(dataKey).then((value) => {
           if (value === null) {
             return;
           } else {
@@ -41,14 +41,14 @@ export default function FavoritesCity() {
 
   async function removeCity(city) {
     try {
-      let citiesJSON = await AsyncStorage.getItem("@weater/FavoriteCity");
+      let citiesJSON = await AsyncStorage.getItem(dataKey);
       let cityArray = JSON.parse(citiesJSON);
       let alteredCities = cityArray.filter(function (e) {
         return e.results.city !== city;
       });
 
       await AsyncStorage.setItem(
-        "@weater/FavoriteCity",
+        dataKey,
         JSON.stringify(alteredCities)
       );
       Alert.alert("Cidade removida");
