@@ -49,7 +49,7 @@ export default function Search() {
     }
 
     if (response.data.results.currently === "noite") {
-      setBackground(["#0c3741", "#0f2f61"]);
+      setBackground(["#808080", "#474A51"]);
     }
     if (response.data.results.currently === "dia") {
       setBackground(["#d1ab48", "#d6d2a5"]);

@@ -23,7 +23,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
   const [weather, setWeather] = useState([]);
   const [icon, setIcon] = useState({ name: "cloud", color: "#fff" });
-  const [background, setBackground] = useState(["#1ed6ff", "#97c1ff"]);
+  const [background, setBackground] = useState(["#d6d2a5", "#d1ab48"]);
 
   useEffect(() => {
     (async () => {
