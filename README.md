@@ -31,7 +31,7 @@ tecnologias utilizadas no decorrer do projeto:
   # Instale as dependências:
   $ yarn install
 
-  # Intalar o expo e rodar por meio dele
+  # Intalar o expo e rodar por meio dele (Aconselho a testar o aplicativo por meio do dispositivo fisico, ele funcionar melhor e é mais prático, basta escanear o     celular no QRcode, ao rodar o expo start.)
   $ expo start
 ```
 
