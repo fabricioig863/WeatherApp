@@ -16,7 +16,7 @@ tecnologias utilizadas no decorrer do projeto:
 - [react-navigation](https://reactnavigation.org/)
 
 ## :books: Requisitos 
-- Para ter o [**Git**](https://git-scm.com/) instalado em sua máquina.
+- Precisa ter o [**Git**](https://git-scm.com/) instalado em sua máquina.
 - Um dispositivo ou emulador iOS ou Android.
 
 
