@@ -32,8 +32,7 @@ tecnologias utilizadas no decorrer do projeto:
   $ yarn install
 
   # Intalar o expo e rodar por meio dele 
-  # (Aconselho a testar o aplicativo por meio do dispositivo fisico, além de ser mais prático, o app, funcionar melhor 
-    basta escanear o  celular no QRcode, ao rodar o expo start.)
+  # (Aconselho a testar o aplicativo por meio do dispositivo fisico, além de ser mais prático, o app, funcionar melhor basta escanear o  celular no QRcode, ao rodar o expo start.)
   $ expo start
 ```
 
