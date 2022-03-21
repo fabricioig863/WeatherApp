@@ -7,10 +7,14 @@ import Forcast from "../../components/Forcast";
 import Header from "../../components/Header";
 import Menu from "../../components/Menu";
 import Loading from "../../components/Loading";
-import { Feather } from "@expo/vector-icons";
 import api, { key } from "../../services/api";
 
-import { Container, List, ForecastDayText } from "./styles";
+import { 
+  Container,
+   List, 
+   ForecastDayText, 
+   Icon 
+} from "./styles";
 
 export default function Home() {
   const navigation = useNavigation();
@@ -88,7 +92,7 @@ export default function Home() {
         <ForecastDayText>
           Previsão para 10 dias
         </ForecastDayText>
-        <Feather name="arrow-right" size={20} color="#fff" />
+        <Icon name="arrow-right" />
       </TouchableOpacity>
 
       <List

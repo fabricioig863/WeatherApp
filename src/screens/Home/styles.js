@@ -18,6 +18,7 @@ export const ForecastDayText = styled.Text`
   text-align: center;
   margin-top: 5px;
   font-size: 15px;
+  color: #FFF;
 `
 
 export const Icon = styled(Feather)`
