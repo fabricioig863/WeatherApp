@@ -3,7 +3,6 @@ import styled from "styled-components/native";
 
 export const Container = styled(SafeAreaView)`
   flex: 1;
-
   background-color: #d6d2a5;
 `;
 
@@ -43,4 +42,8 @@ export const CityContainerTop = styled.View`
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 30px;
+`;
+
+export const Goback = styled.Text`
+  font-size: 22px;
 `;

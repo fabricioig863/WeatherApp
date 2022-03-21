@@ -9,7 +9,11 @@ import api, { key } from "../../services/api";
 import Loading from "../../components/Loading";
 import { useNavigation } from "@react-navigation/native";
 
-import { Container, List, BackButton } from "./styles";
+import { Container, 
+  List, 
+  BackButton, 
+  WeekResultCity 
+} from "./styles";
 
 export default function NextDay() {
   const navigation = useNavigation();
@@ -73,14 +77,12 @@ export default function NextDay() {
         <Text style={{ fontSize: 22 }}>Voltar</Text>
       </BackButton>
 
-      <Text style={{ textAlign: "center", marginTop: 20, fontSize: 18 }}>
+      <WeekResultCity>
         {weather.results.city}
-      </Text>
+      </WeekResultCity>
 
       <List
-        horizontal={true}
         showsVerticalScrollIndicator={false}
-        contentContainerStyle={{ padding: "5%" }}
         data={weather.results.forecast}
         keyExtractor={(item) => item.date}
         renderItem={({ item }) => <Forcast vertical data={item} />}

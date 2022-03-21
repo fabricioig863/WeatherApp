@@ -3,6 +3,7 @@ import { Feather, MaterialCommunityIcons } from '@expo/vector-icons';
 
 export const Container = styled.View`
   margin-top: 15px;
+  margin-bottom: 15px;
   padding: 10px;
   background-color: #fff;
   flex-direction: row;

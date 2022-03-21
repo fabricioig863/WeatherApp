@@ -104,7 +104,7 @@ export default function Search() {
             style={{
               flexDirection: "row",
               alignItems: "center",
-              justifyContent: "space-between",
+              justifyContent: "space-between"
             }}
           >
             <City>{city.results.city}</City>

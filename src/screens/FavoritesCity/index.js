@@ -13,6 +13,7 @@ import {
   CardContainer,
   CityContainer,
   CityContainerTop,
+  Goback
 } from "./styles";
 
 export default function FavoritesCity() {
@@ -62,7 +63,7 @@ export default function FavoritesCity() {
       <Container>
         <BackButton onPress={() => navigation.navigate("Home")}>
           <Feather name="chevron-left" size={32} color="#000" />
-          <Text style={{ fontSize: 22 }}>Voltar</Text>
+          <Goback>Voltar</Goback>
         </BackButton>
 
         <Title>Cidade favoritadas</Title>
@@ -113,7 +114,7 @@ export default function FavoritesCity() {
       <Container>
         <BackButton onPress={() => navigation.navigate("Home")}>
           <Feather name="chevron-left" size={32} color="#000" />
-          <Text style={{ fontSize: 22 }}>Voltar</Text>
+          <Goback>Voltar</Goback>
         </BackButton>
 
         <Title>Sem cidades favoritas</Title>

@@ -17,3 +17,19 @@ export const BackButton = styled(TouchableOpacity)`
   align-items: center;
   margin-top: 15px;
 `;
+
+export const Goback = styled.Text`
+  font-size: 22px;
+`
+export const WeekResultCity = styled.Text`
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+`
+
+export const ForecastDayText = styled.Text`
+  text-align: center;
+  margin-top: 5px;
+  font-size: 15px;
+`

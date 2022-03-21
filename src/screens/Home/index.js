@@ -10,7 +10,7 @@ import Loading from "../../components/Loading";
 import { Feather } from "@expo/vector-icons";
 import api, { key } from "../../services/api";
 
-import { Container, List } from "./styles";
+import { Container, List, ForecastDayText } from "./styles";
 
 export default function Home() {
   const navigation = useNavigation();
@@ -85,9 +85,9 @@ export default function Home() {
         }}
         onPress={() => navigation.navigate("NextDay")}
       >
-        <Text style={{ marginHorizontal: 5, fontSize: 16, color: "#fff" }}>
-          Próximos 10 dias
-        </Text>
+        <ForecastDayText>
+          Previsão para 10 dias
+        </ForecastDayText>
         <Feather name="arrow-right" size={20} color="#fff" />
       </TouchableOpacity>
 

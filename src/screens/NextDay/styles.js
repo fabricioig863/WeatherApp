@@ -17,3 +17,9 @@ export const BackButton = styled(TouchableOpacity)`
   align-items: center;
   margin-top: 15px;
 `;
+
+export const WeekResultCity = styled.Text`
+  text-align: center; 
+  margin-top: 20px;
+  font-size: 18px;
+`;

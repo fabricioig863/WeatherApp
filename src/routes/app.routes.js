@@ -39,6 +39,7 @@ export default function AppRoutes() {
             <Drawer.Screen
                 name="NextDay"
                 component={NextDay}
+                options={{ title: "Previsão dos próximos dias" }}
             />
             <Drawer.Screen
                 name="DetailsFavorite"

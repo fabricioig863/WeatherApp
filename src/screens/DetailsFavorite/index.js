@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Text } from "react-native";
-import * as Location from "expo-location";
 
 import Forcast from "../../components/Forcast";
 import { Feather } from "@expo/vector-icons";
@@ -9,7 +7,14 @@ import api, { key } from "../../services/api";
 import Loading from "../../components/Loading";
 import { useNavigation } from "@react-navigation/native";
 
-import { Container, List, BackButton } from "./styles";
+import { 
+  Container, 
+  List, 
+  BackButton, 
+  Goback,
+  WeekResultCity,
+  ForecastDayText   
+} from "./styles";
 
 export default function DetailsFavorite({ route }) {
   const navigation = useNavigation();
@@ -61,25 +66,18 @@ export default function DetailsFavorite({ route }) {
     <Container>
       <BackButton onPress={() => navigation.navigate("Home")}>
         <Feather name="chevron-left" size={32} color="#000" />
-        <Text style={{ fontSize: 22 }}>Voltar</Text>
+        <Goback>Voltar</Goback>
       </BackButton>
 
-      <Text
-        style={{
-          textAlign: "center",
-          marginTop: 10,
-          fontSize: 18,
-          fontWeight: "bold",
-        }}
-      >
+      <WeekResultCity>
         {weather.results.city}
-      </Text>
-      <Text style={{ textAlign: "center", marginTop: 5, fontSize: 15 }}>
+      </WeekResultCity>
+
+      <ForecastDayText>
         Previsão para 10 dias
-      </Text>
+      </ForecastDayText>
 
       <List
-        horizontal={true}
         showsVerticalScrollIndicator={false}
         data={weather.results.forecast}
         keyExtractor={(item) => item.date}
