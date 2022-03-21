@@ -17,11 +17,11 @@ import {
 } from "./styles";
 
 export default function FavoritesCity() {
+  const dataKey = "@weater/FavoriteCity"
   const navigation = useNavigation();
   const [cities, setCities] = useState([]);
 
   useEffect(() => {
-    const dataKey = "@weater/FavoriteCity"
     const getData = async () => {
       try {
         await AsyncStorage.getItem(dataKey).then((value) => {

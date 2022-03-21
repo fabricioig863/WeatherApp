@@ -21,13 +21,15 @@ import {
 
 export default function Search() {
   const navigation = useNavigation();
-
+  const dataKey = "@weater/FavoriteCity"
+  
   const [input, setInput] = useState("");
   const [city, setCity] = useState(null);
   const [addCity, setAddCity] = useState([]);
   const [error, setError] = useState(null);
   const [favorite, setFavorite] = useState(false);
   const [background, setBackground] = useState(["#1ed6ff", "#97c1ff"]);
+
 
   async function handleSearch() {
     setFavorite(false);
@@ -63,7 +65,7 @@ export default function Search() {
   async function handleAddCity() {
     try {
       await AsyncStorage.setItem(
-        "@weater/FavoriteCity",
+        dataKey,
         JSON.stringify(addCity)
       );
       setFavorite(!favorite);
