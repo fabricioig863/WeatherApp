@@ -5,7 +5,14 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
-  },
-  "name": "OpenWeathermap"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.OpenWeathermap",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.OpenWeathermap",
+      "versionCode": 1
+    }
+  }
 }
